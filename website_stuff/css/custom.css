@@ -18,6 +18,13 @@ body {
   list-style: none;
 }
 
+.btn-blue{
+  background-color: #62A8E5;
+  padding: 1rem;
+  color: black;
+  font-size: 1.3rem;
+}
+
 nav{
   background-color: #62A8E5;
 }
