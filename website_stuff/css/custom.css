@@ -31,11 +31,13 @@ nav{
 
 #welcome{
   color: #fff;
+  font-weight: 300;
   text-shadow:
-   -1.5px -1.5px 0 #000, /* Thickness of black outline */
-   1.5px -1.5px 0 #000,
-   -1.5px 1.5px 0 #000,
-   1.5px 1.5px 0 #000;
+  /* Text Outline */
+  -1.5px -1.5px 0 #000,
+  1.5px -1.5px 0 #000,
+  -1.5px 1.5px 0 #000,
+  1.5px 1.5px 0 #000;
 }
 
 .below-nav {
@@ -74,7 +76,7 @@ ul{
 #index-header{
   width: 100%;
   height: 750px;
-  background-image: url('../images/DHFallPic.jpg');
+  background-image: url('../images/DHFallPic.jpg'); /* It might be worth getting the original image so the quality is higher (https://www.flickr.com/photos/nmhphotos/37815568041/in/album-72157687562625500/) */
   background-attachment: fixed;
   padding : 16rem 0 8rem 0;
 }
