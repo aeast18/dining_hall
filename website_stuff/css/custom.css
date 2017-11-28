@@ -32,7 +32,7 @@ nav{
 #welcome{
   color: #fff;
   text-shadow:
-   -1.5px -1.5px 0 #000,
+   -1.5px -1.5px 0 #000, /* Thickness of black outline */
    1.5px -1.5px 0 #000,
    -1.5px 1.5px 0 #000,
    1.5px 1.5px 0 #000;
