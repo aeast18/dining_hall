@@ -30,11 +30,12 @@ nav{
 }
 
 #welcome{
+  color: #fff;
   text-shadow:
-   -1px -1px 0 #FFF,
-   1px -1px 0 #FFF,
-   -1px 1px 0 #FFF,
-   1px 1px 0 #FFF;
+   -1.5px -1.5px 0 #000,
+   1.5px -1.5px 0 #000,
+   -1.5px 1.5px 0 #000,
+   1.5px 1.5px 0 #000;
 }
 
 .below-nav {
@@ -72,6 +73,7 @@ ul{
 
 #index-header{
   width: 100%;
+  height: 750px;
   background-image: url('../images/DHFallPic.jpg');
   background-attachment: fixed;
   padding : 16rem 0 8rem 0;
