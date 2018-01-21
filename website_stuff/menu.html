@@ -159,7 +159,7 @@ function fillMenu(day) {
 
   $('.currentdate').empty();
 
-  $('.currentdate').text("Menu for " + day + " " + listDate[day].getUTCMonth() + "/" + listDate[day].getUTCDate() + "/" + listDate[day].getUTCFullYear());
+  $('.currentdate').text("Menu for " + day + " " + (listDate[day].getUTCMonth()+1) + "/" + listDate[day].getUTCDate() + "/" + listDate[day].getUTCFullYear());
 
   $('.meal').empty();
 

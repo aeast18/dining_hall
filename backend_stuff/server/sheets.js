@@ -21,7 +21,7 @@ module.exports = function sheets(){
           sheets.importData = function(file){
             var content = file.buffer.toString();
             var newData = content.split(/(?:\r\n|\r|\n)/g).map( (element) => element.split('\t') ) ;
-            nawData.slice(1).forEach((element) => {
+            newData.slice(1).forEach((element) => {
               sheets.addData(element);
             });
           }
@@ -34,18 +34,20 @@ module.exports = function sheets(){
           }
 
           sheets.addData = function(element){
-            menus.findOne({ value : element }, (err, result) => {
-              if (err) throw err;
-              if(!result){
-                var temp = element[1].split('-');
-                var itemDate = Date.UTC(parseInt(temp[0]),parseInt(temp[1])-1,parseInt(temp[2]));
-                menus.insertOne({
-                  date: itemDate,
-                  value: element,
-                });
-                tryAddMenu(element[8]);
-              }
-            });
+            if(element&&element.length>1){
+              menus.findOne({ value : element }, (err, result) => {
+                if (err) throw err;
+                if(!result){
+                  var temp = element[1].split('-');
+                  var itemDate = Date.UTC(parseInt(temp[0]),parseInt(temp[1])-1,parseInt(temp[2]));
+                  menus.insertOne({
+                    date: itemDate,
+                    value: element,
+                  });
+                  tryAddMenu(element[8]);
+                }
+              });
+            }
           }
 
           function tryAddMenu(keyname){
